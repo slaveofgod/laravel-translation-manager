@@ -22,7 +22,7 @@
         "php": ">=7.0.0",
         "laravel/framework": ">=5.4.x-dev",
         "symfony/finder": "~3.3",
-        "alexeybob/laravel-translator": "dev-master"
+        "alexeybob/laravel-translator": "1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.0"
