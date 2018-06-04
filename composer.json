@@ -1,0 +1,60 @@
+{
+    "name": "alexeybob/laravel-translation-manager",
+    "description": "Manage Laravel Translations",
+    "type": "library",
+    "keywords": [
+        "laravel-translation-manager",
+        "laravel",
+        "translator",
+        "translation",
+        "localization",
+	"manager"
+    ],
+    "homepage": "https://github.com/alexeybob/laravel-translation-manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Bob",
+            "email": "alexey.bob@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=5.4.x-dev",
+        "symfony/finder": "~3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AB\\Laravel\\TranslationManager\\": "src/"
+        },
+        "files": [
+            "src/Helpers/CommonHelper.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AB\\Laravel\\TranslationManager\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AB\\Laravel\\TranslationManager\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php artisan vendor:publish --tag=translation-manager --force"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=translation-manager --force"
+        ],
+        "post-install-cmd": [
+            "@php artisan vendor:publish --tag=translation-manager --force"
+        ]
+    }
+}
