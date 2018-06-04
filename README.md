@@ -1,6 +1,6 @@
 # Manage Laravel Translations
 
-This is a package to manage Laravel translation files. It will change translation files with your changes. All changed file will be backuped before updated.
+This is a package to manage Laravel translation files. It will change translation files with your changes. All changed files will be backuped before updated.
 
 ## Installation
 
