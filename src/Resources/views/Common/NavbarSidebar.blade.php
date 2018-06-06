@@ -13,7 +13,7 @@
                 <!-- /input-group -->
             </li>
             <li>
-                <a href="{{ route('translator_index') }}"><i class="fa fa-dashboard fa-fw"></i> {{ trans('abtmLang::messages.dashboard') }}</a>
+                <a href="{{ route('translator_dashboard') }}"><i class="fa fa-dashboard fa-fw"></i> {{ trans('abtmLang::messages.dashboard') }}</a>
             </li>
             
             @foreach ($appService->getLanguages() as $language)

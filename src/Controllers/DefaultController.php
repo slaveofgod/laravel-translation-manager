@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 use Symfony\Component\Finder\Finder;
 use AB\Laravel\Translator\Services\TranslatorService;
 
+
+/**
+ * @author Alexey Bob <alexey.bob@gmail.com>
+ */
 class DefaultController extends BaseController
 {
     /**
@@ -38,7 +42,7 @@ class DefaultController extends BaseController
         $this->template_path = $this->resource_path . '/views';
     }
     
-    public function index(Request $request)
+    public function dashboard(Request $request)
     {
         $languages = [];
         
@@ -128,7 +132,7 @@ class DefaultController extends BaseController
      * 
      * @return array
      */
-    public function edit(Request $request, $language)
+    public function languageEdit(Request $request, $language)
     {
         $translator = new TranslatorService(
             $language,

@@ -62,7 +62,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="{{ route('translator_index') }}">SB Admin v2.0</a>
+                    <a class="navbar-brand" href="{{ route('translator_dashboard') }}">SB Admin v2.0</a>
                 </div>
                 <!-- /.navbar-header -->
 

@@ -7,7 +7,7 @@ Route::group([
 
     $controller = \Config::get('translation_manager.ab_translation_manager_controller', 'AB\Laravel\TranslationManager\Controllers\DefaultController');
     
-    Route::get('/', $controller . '@index')->name('translator_index');
+    Route::get('/', $controller . '@dashboard')->name('translator_dashboard');
     Route::get('/language/{language}', $controller . '@language')->name('translator_language');
-    Route::post('/language/{language}/edit', $controller . '@edit')->name('translator_edit');
+    Route::post('/language/{language}/edit', $controller . '@languageEdit')->name('translator_language_edit');
 });

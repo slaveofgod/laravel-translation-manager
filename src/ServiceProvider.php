@@ -5,7 +5,6 @@ namespace AB\Laravel\TranslationManager;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 
-
 /**
  * @author Alexey Bob <alexey.bob@gmail.com>
  */

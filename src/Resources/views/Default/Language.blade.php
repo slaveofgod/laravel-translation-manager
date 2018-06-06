@@ -3,20 +3,20 @@
 @section('translator_content')
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ route('translator_index') }}">{{ trans('abtmLang::messages.dashboard') }}</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('translator_dashboard') }}">{{ trans('abtmLang::messages.dashboard') }}</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
       </ol>
     </nav>
 
+    <div class="panel-group" id="accordion">
     @foreach ($resources as $resource)
-    <!-- /.row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    {{ $resource['pathname'] }}
-                </div>
-                <!-- /.panel-heading -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ $loop->index }}">{{ $resource['pathname'] }}</a>
+                </h4>
+            </div>
+            <div id="collapse{{ $loop->index }}" class="panel-collapse collapse {{ $loop->first ? 'in': '' }}">
                 <div class="panel-body">
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-resource-{{ $loop->index }}">
                         <thead>
@@ -28,14 +28,10 @@
                         </thead>
                     </table>
                 </div>
-                <!-- /.panel-body -->
             </div>
-            <!-- /.panel -->
         </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <!-- /.row -->
     @endforeach
+    </div>
 @endsection
 
 @push('translator_javascripts')
@@ -46,7 +42,7 @@
 
             editor[{{ $loop->index }}] = new $.fn.dataTable.Editor( {
                 ajax: {
-                    url: "{{ route('translator_edit', ['language' => $language]) }}",
+                    url: "{{ route('translator_language_edit', ['language' => $language]) }}",
                     data: function ( d ) {
                         d._token = "{{ csrf_token() }}";
                     }
