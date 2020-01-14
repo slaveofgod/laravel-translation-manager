@@ -140,9 +140,17 @@ class DefaultController extends BaseController
             $this->template_path,
             $this->prefix
         );
-        
+
+        $requestData = array(
+            $request->get('DT_RowId')  => array(
+                'original'      => $request->get('original'),
+                'translation'   => $request->get('translation'),
+                '_token'        => $request->get('_token')
+            )
+        );
+
         $data = null;
-        foreach ($request->get('data') as $dataHesh => $dataValue) {
+        foreach ($requestData as $dataHesh => $dataValue) {
             list($filePathHesh, $messageHesh) = explode(',', $dataHesh);
             
             $resource = $translator->getResourceByHesh($filePathHesh);
@@ -153,7 +161,7 @@ class DefaultController extends BaseController
                         $resource->save();
                     }
                     
-                    $data[] = [
+                    $data = [
                         'DT_RowId' => $message['hesh'],
                         'original' => $message['original'],
                         'translation' => $dataValue['translation']
@@ -162,6 +170,6 @@ class DefaultController extends BaseController
             }
         }
         
-        return ['data' => $data];
+        return $data;
     }
 }

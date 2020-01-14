@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.7",
-    "datatables": "~1.10.4",
+    "datatables": "~1.10.20",
     "datatables-plugins": "~1.0.1",
     "flot": "~0.8.3",
     "font-awesome": "~4.6.3",

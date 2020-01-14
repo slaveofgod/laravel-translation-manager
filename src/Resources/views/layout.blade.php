@@ -18,11 +18,11 @@
         <link href="/vendor/abtm/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
 
         <!-- DataTables CSS -->
-        <link rel="stylesheet" type="text/css" href="/vendor/abtm/datatables/datatables.min.css"/>
-        <!--<link href="/vendor/abtm/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">-->
-
-        <!-- DataTables Responsive CSS -->
-        <!--<link href="/vendor/abtm/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.2/css/buttons.dataTables.min.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/select/1.1.2/css/select.dataTables.min.css" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.0.2/css/responsive.dataTables.min.css" />
         
         <!-- Custom CSS -->
         <link href="/vendor/abtm/dist/css/sb-admin-2.css" rel="stylesheet">
@@ -89,7 +89,7 @@
         <!-- /#wrapper -->
 
         <!-- jQuery -->
-        <script src="/vendor/abtm/vendor/jquery/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js" ></script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="/vendor/abtm/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -100,14 +100,17 @@
         <!-- Morris Charts JavaScript -->
         <script src="/vendor/abtm/vendor/raphael/raphael.min.js"></script>
         <script src="/vendor/abtm/vendor/morrisjs/morris.min.js"></script>
-        <script src="/vendor/abtm/data/morris-data.js"></script>
-        
+{{--        <script src="/vendor/abtm/data/morris-data.js"></script>--}}
+
         <!-- DataTables JavaScript -->
-        <script src="/vendor/abtm/datatables/datatables.min.js"></script>
-        <!--<script src="/vendor/abtm/vendor/datatables/js/jquery.dataTables.min.js"></script>-->
-        <!--<script src="/vendor/abtm/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>-->
-        <!--<script src="/vendor/abtm/vendor/datatables-responsive/dataTables.responsive.js"></script>-->
-        
+        <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js" ></script>
+        <script src="https://cdn.datatables.net/buttons/1.1.2/js/dataTables.buttons.min.js" ></script>
+        <script src="https://cdn.datatables.net/select/1.1.2/js/dataTables.select.min.js" ></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+        <script src="https://cdn.datatables.net/responsive/2.0.2/js/dataTables.responsive.min.js" ></script>
+
+        <!-- DataTable AltEditor -->
+        <script src="/vendor/abtm/datatables/AltEditor/src/dataTables.altEditor.free.js" ></script>
 
         <!-- Custom Theme JavaScript -->
         <script src="/vendor/abtm/dist/js/sb-admin-2.js"></script>

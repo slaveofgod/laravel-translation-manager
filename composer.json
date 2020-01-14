@@ -49,13 +49,13 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "@php artisan vendor:publish --tag=translation-manager --force"
+            "@php artisan vendor:publish --tag=abtmPublishes --force"
         ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=translation-manager --force"
+            "@php artisan vendor:publish --tag=abtmPublishes --force"
         ],
         "post-install-cmd": [
-            "@php artisan vendor:publish --tag=translation-manager --force"
+            "@php artisan vendor:publish --tag=abtmPublishes --force"
         ]
     }
 }
