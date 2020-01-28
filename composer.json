@@ -1,5 +1,5 @@
 {
-    "name": "alexeybob/laravel-translation-manager",
+    "name": "slaveofgod/laravel-translation-manager",
     "description": "Manage Laravel Translations",
     "type": "library",
     "keywords": [
@@ -10,19 +10,19 @@
         "localization",
 	"manager"
     ],
-    "homepage": "https://github.com/alexeybob/laravel-translation-manager",
+    "homepage": "https://github.com/slaveofgod/laravel-translation-manager",
     "license": "MIT",
     "authors": [
         {
-            "name": "Alexey Bob",
-            "email": "alexey.bob@gmail.com"
+            "name": "Slave of God",
+            "email": "iamtheslaveofgod@gmail.com"
         }
     ],
     "require": {
         "php": ">=7.0.0",
         "laravel/framework": ">=5.4.x-dev",
         "symfony/finder": ">=4.3.5",
-        "alexeybob/laravel-translator": ">=1.0.0"
+        "slaveofgod/laravel-translator": ">=1.0.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.0"
