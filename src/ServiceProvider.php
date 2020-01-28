@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 
 /**
- * @author Alexey Bob <alexey.bob@gmail.com>
+ * @author Slave of God <iamtheslaveofgod@gmail.com>
  */
 class ServiceProvider extends BaseServiceProvider
 {
