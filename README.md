@@ -5,7 +5,7 @@ This is a package to manage Laravel translation files. It will change translatio
 ## Installation
 
 ```sh
-$ composer require alexeybob/laravel-translation-manager dev-master
+$ composer require slaveofgod/laravel-translation-manager dev-master
 $ php artisan vendor:publish --tag=abtmPublishes --force
 ```
 
